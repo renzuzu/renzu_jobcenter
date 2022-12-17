@@ -12,8 +12,8 @@ Fivem - Job center
 
 # dependency
 - ESX LEgacy
-- QBCORE soon
 - fivem-appearance
+- ox_lib
 
 # tasks
 - whitelists jobs applications
