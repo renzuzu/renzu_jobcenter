@@ -5,10 +5,10 @@ Fivem - Job center
 
 
 # Feature 
+- Multiple Jobs Selection
 - Easy to add and remove jobs via config
 - Supports Job Skins
 - Multi Jobs History Selector
-- ESX
 
 # dependency
 - ESX LEgacy
