@@ -35,7 +35,9 @@ RegisterNUICallback('nuicb', function(data)
 			description = 'You are Hired as '..job.label,
 			type = 'success'
 		})
-		SetSkin(job.name)
+		if GetResourceState('fivem-appearance') == 'started' then
+			SetSkin(job.name)
+		end
 		SetTimeScale(0.3)
         PlaySoundFrontend(-1, "PROPERTY_PURCHASE", "MEDAL_GOLD", 0)
         showScaleform('New Job','Check your map for '..job.label..' location',8)
@@ -52,6 +54,7 @@ end)
 
 local oldskin = nil
 SetSkin = function(job)
+	if not Config.useSKin then return end
 	local gender = GetEntityModel(PlayerPedId()) == `mp_m_freemode_01` and 'm' or 'f'
 	print('skin',Config.Skins[job])
 	if Config.Skins[job] then
@@ -137,7 +140,9 @@ Multi = function()
 							description = 'You are Now '..v.label,
 							type = 'success'
 						})
-						SetSkin(v.name)
+						if GetResourceState('fivem-appearance') == 'started' then
+							SetSkin(v.name)
+						end
 						SetTimeScale(0.3)
 						PlaySoundFrontend(-1, "PROPERTY_PURCHASE", "MEDAL_GOLD", 0)
 						showScaleform('New Job','Check your map for '..v.label..' location',8)

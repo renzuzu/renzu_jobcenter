@@ -2,6 +2,7 @@ Config = {}
 
 Config.jobcenter = vec3(-268.52502441406,-956.97515869141,31.21)
 Config.multijob = vec3(-271.64349365234,-955.54302978516,31.22)
+Config.useSKin = false -- set to true if you want custom clothes for each jobs, you need to setup it according to your EUP clothing
 Config.Jobs = {
 	[1] = {
 		name = 'taxi',
